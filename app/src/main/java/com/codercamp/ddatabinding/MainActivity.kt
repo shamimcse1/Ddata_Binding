@@ -13,11 +13,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-
-        binding.click.setOnClickListener(View.OnClickListener {
-            val roll = (1..10).random()
-            binding.tv.text  = roll.toString()
-        })
+       binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+//
+//        binding.click.setOnClickListener(View.OnClickListener {
+//            val roll = (1..10).random()
+//            binding.tv.text  = roll.toString()
+//        })
     }
 }
